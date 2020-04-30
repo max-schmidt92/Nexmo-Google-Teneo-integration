@@ -12,16 +12,16 @@ Installation:
 You will need to use the credentials below when establishing the .env file. Do not forget to associate a phone number to the project.
 4. Create .env file in the directory, the structure of the parameters uses following example data:
 
-TENEO_ENGINE_URL=<URL_TO_TENEO_ENGINE>
-LANGUAGE_CODE=en-GB
-PORT=3000
-GOOGLE_PROJECT_NAME=<PROJECT_NAME>
-TTS_RESPONSE_TYPE=google-websocket
-AUDIO_FILE_NAME=output.mp3
-NEXMO_API_KEY=e3e996XX
-NEXMO_API_SECRET=tY3CSDhXXXXXXXX
-NEXMO_APPLICATION_ID=8e454ec4-149a-4433-9dc6-XXXXXXXXX
-NEXMO_PRIVATE_KEY_PATH=private.key
+* TENEO_ENGINE_URL=<URL_TO_TENEO_ENGINE>
+* LANGUAGE_CODE=en-GB
+* PORT=3000
+* GOOGLE_PROJECT_NAME=<PROJECT_NAME>
+* TTS_RESPONSE_TYPE=google-websocket
+* AUDIO_FILE_NAME=output.mp3
+* NEXMO_API_KEY=e3e996XX
+* NEXMO_API_SECRET=tY3CSDhXXXXXXXX
+* NEXMO_APPLICATION_ID=8e454ec4-149a-4433-9dc6-XXXXXXXXX
+* NEXMO_PRIVATE_KEY_PATH=private.key
 
 Notes:
 AUDIO_FILE_NAME is only used if "TTS_RESPONSE_TYPE=google-audio-file" is set, otherwise it is not used.
