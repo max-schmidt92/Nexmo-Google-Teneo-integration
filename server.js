@@ -274,7 +274,8 @@ async function generateGoogleSpeechAudioFromFile(transcript) {
     // Write the binary audio content to a local file
     await writeFile(audio_file_location, response_mp3.audioContent, 'binary');
 
-    // Not functional, Nexmo does not attempt to play the audio (?)
+    // UPDATE: It works, just make sure the credentials points to the correct Nexmo project
+    // Otherwise, the websocket will work but not Nexmo actions to be taken
     nexmo.calls.stream.start(CALL_UUID, { stream_url: ['https://' + ngrok_hostname + '/' + audio_file_location], loop: 1, bargeIn: true }, (err, res) => {
         if(err) { console.error(err); }
         else {
